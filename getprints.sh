@@ -7,3 +7,6 @@ for i in $(find /home/deck/.steam/steam/userdata/$USERID/ -name "*.jpg" | grep s
 do
 cp -v "$i" ss/
 done
+git add .
+git commit --allow-empty-message -m ""
+git push
